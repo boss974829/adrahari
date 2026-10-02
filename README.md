@@ -1,14 +1,10 @@
-# Aditya Adrahari App Store
+# Aditya Agrahari App Store
 
 Independent desktop software lab. India.
 
 We build what others forgot to fix.
 
-The site is [index.html](./index.html) in this repository.
-
-Public address, once GitHub Pages is turned on for this repo (Settings → Pages → Deploy from branch `main` / root):
-
-https://boss974829.github.io/adrahari/
+**Open the website:** https://boss974829.github.io/adrahari/
 
 Four free, portable, offline-first Windows tools:
 
