@@ -988,7 +988,7 @@ keys.forEach((key, index) => {
   var running = false;
   function limit() { return Math.max(0, document.documentElement.scrollHeight - window.innerHeight); }
   function frame() {
-    current += (target - current) * 0.075;
+    current += (target - current) * 0.04;
     if (Math.abs(target - current) < 0.5) { current = target; running = false; }
     window.scrollTo(0, current);
     document.documentElement.style.setProperty("--sy", current.toFixed(1));
@@ -998,7 +998,7 @@ keys.forEach((key, index) => {
   window.addEventListener("wheel", function (e) {
     if (e.ctrlKey) return;
     e.preventDefault();
-    target = Math.min(limit(), Math.max(0, target + e.deltaY * 0.82));
+    target = Math.min(limit(), Math.max(0, target + e.deltaY));
     kick();
   }, { passive: false });
   document.addEventListener("click", function (e) {
